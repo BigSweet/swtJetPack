@@ -16,8 +16,8 @@ class UploadWork(
     context: Context, workerParams: WorkerParameters
 ) : Worker(context, workerParams) {
     override fun doWork(): Result {
-        Thread.sleep(8000)
-        Log.i("swt", "doWork: 完成啦")
+        Thread.sleep(2000)
+        Log.i("swt", "doWork: 上传完成啦")
         return Result.success()
     }
 }
